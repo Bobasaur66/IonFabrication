@@ -19,7 +19,7 @@ namespace IonFabrication
     {        
         private const string MyGUID = "com.Bobasaur.IonFabrication";
         private const string PluginName = "Ion Fabrication";
-        private const string VersionString = "1.0.0";
+        private const string VersionString = "1.0.1";
 
         private static readonly Harmony Harmony = new Harmony(MyGUID);
         public static ManualLogSource Log = new ManualLogSource(PluginName);
@@ -379,6 +379,25 @@ namespace IonFabrication
                     "ionFabrication"
                 });
             GadgetExtensions.SetUnlock(customPrefab, TechType.Peeper, 1);
+            customPrefab.Register();
+
+            //table coral
+            customPrefab = new CustomPrefab("ionTableCoral", "Table Coral (x8)", "Contains trace precious metals used in computer fabrication.", SpriteManager.Get(TechType.JeweledDiskPiece));
+            gameObject = new CloneTemplate(IonFabricationPlugin.Info, TechType.JeweledDiskPiece);
+            customPrefab.SetGameObject(gameObject);
+            GadgetExtensions.SetRecipe(customPrefab, new RecipeData
+            {
+                craftAmount = 0,
+                Ingredients = new List<CraftData.Ingredient>
+                {
+                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                },
+                LinkedItems = Enumerable.Repeat(TechType.JeweledDiskPiece, 8).ToList()
+            }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
+                {
+                    "ionFabrication"
+                });
+            GadgetExtensions.SetUnlock(customPrefab, TechType.JeweledDiskPiece, 1);
             customPrefab.Register();
         }
     }
