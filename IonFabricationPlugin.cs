@@ -19,7 +19,7 @@ namespace IonFabrication
     {        
         private const string MyGUID = "com.Bobasaur.IonFabrication";
         private const string PluginName = "Ion Fabrication";
-        private const string VersionString = "1.0.1";
+        private const string VersionString = "2.1.0";
 
         private static readonly Harmony Harmony = new Harmony(MyGUID);
         public static ManualLogSource Log = new ManualLogSource(PluginName);
@@ -46,9 +46,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Titanium, 10).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -65,9 +65,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Copper, 10).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -84,9 +84,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.CrashPowder, 4).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -103,9 +103,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Sulphur, 2).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -122,9 +122,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Diamond, 4).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -141,9 +141,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Gold, 6).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -160,9 +160,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Kyanite, 1).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -179,9 +179,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Lead, 6).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -198,9 +198,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Lithium, 4).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -217,9 +217,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Magnetite, 4).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -236,9 +236,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Nickel, 2).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -255,9 +255,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Quartz, 8).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -274,9 +274,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.AluminumOxide, 2).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -293,9 +293,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Salt, 6).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -312,9 +312,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.Silver, 6).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -331,9 +331,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.UraniniteCrystal, 2).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -350,9 +350,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.GasPod, 8).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -369,9 +369,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.SeaTreaderPoop, 1).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -388,9 +388,9 @@ namespace IonFabrication
             GadgetExtensions.SetRecipe(customPrefab, new RecipeData
             {
                 craftAmount = 0,
-                Ingredients = new List<CraftData.Ingredient>
+                Ingredients = new List<Ingredient>
                 {
-                    new CraftData.Ingredient(TechType.PrecursorIonCrystal, 1)
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
                 },
                 LinkedItems = Enumerable.Repeat(TechType.JeweledDiskPiece, 8).ToList()
             }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
@@ -398,6 +398,25 @@ namespace IonFabrication
                     "ionFabrication"
                 });
             GadgetExtensions.SetUnlock(customPrefab, TechType.JeweledDiskPiece, 1);
+            customPrefab.Register();
+
+            //stalker teeth
+            customPrefab = new CustomPrefab("ionStalkerTeeth", "Stalker Teeth (x4)", "A sharp, hardened calcium formation, shed by one of the indigenous creatures.", SpriteManager.Get(TechType.StalkerTooth));
+            gameObject = new CloneTemplate(IonFabricationPlugin.Info, TechType.StalkerTooth);
+            customPrefab.SetGameObject(gameObject);
+            GadgetExtensions.SetRecipe(customPrefab, new RecipeData
+            {
+                craftAmount = 0,
+                Ingredients = new List<Ingredient>
+                {
+                    new Ingredient(TechType.PrecursorIonCrystal, 1)
+                },
+                LinkedItems = Enumerable.Repeat(TechType.StalkerTooth, 4).ToList()
+            }).WithFabricatorType(CraftTree.Type.Fabricator).WithStepsToFabricatorTab(new string[]
+                {
+                    "ionFabrication"
+                });
+            GadgetExtensions.SetUnlock(customPrefab, TechType.StalkerTooth, 1);
             customPrefab.Register();
         }
     }
